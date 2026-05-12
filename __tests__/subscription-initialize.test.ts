@@ -266,7 +266,7 @@ describe('POST /api/subscriptions/initialize', () => {
           data: expect.objectContaining({
             authorization_url: expect.stringContaining('/subscribe/test-complete'),
             reference: expect.stringContaining('test_'),
-            amount: 10000, // GHS 100 in pesewas
+            amount: 4000, // GHS 40 in pesewas
             currency: 'GHS',
             channels: ['mobile_money']
           })
@@ -289,7 +289,7 @@ describe('POST /api/subscriptions/initialize', () => {
         expect.objectContaining({
           data: expect.objectContaining({
             reference: expect.stringContaining('quarterly'),
-            amount: 27000 // GHS 270 in pesewas
+            amount: 10800 // GHS 108 in pesewas
           })
         })
       );
@@ -330,7 +330,7 @@ describe('POST /api/subscriptions/initialize', () => {
           }),
           body: JSON.stringify({
             email: 'test@example.com',
-            amount: 10000,
+            amount: 4000,
             currency: 'GHS',
             channels: ['mobile_money'],
             callback_url: 'http://localhost:3000/subscribe/callback',
@@ -370,7 +370,7 @@ describe('POST /api/subscriptions/initialize', () => {
         expect.objectContaining({
           body: JSON.stringify({
             email: 'test@example.com',
-            amount: 96000, // GHS 960 in pesewas
+            amount: 38400, // GHS 384 in pesewas
             currency: 'GHS',
             channels: ['card'],
             callback_url: 'http://localhost:3000/subscribe/callback',

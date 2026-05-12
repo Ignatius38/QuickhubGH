@@ -7,17 +7,17 @@ const PAYSTACK_API_URL = 'https://api.paystack.co';
 const SUBSCRIPTION_TIERS = {
   monthly: {
     name: 'Monthly',
-    amount: 10000, // GHS 100 in pesewas (smallest unit)
+    amount: 4000, // GHS 40 in pesewas (smallest unit)
     description: 'Full access for 30 days'
   },
   quarterly: {
     name: 'Quarterly',
-    amount: 27000, // GHS 270 (10% discount)
+    amount: 10800, // GHS 108 (10% discount)
     description: '3 months access with 10% discount'
   },
   annual: {
     name: 'Annual',
-    amount: 96000, // GHS 960 (20% discount)
+    amount: 38400, // GHS 384 (20% discount)
     description: '12 months access with 20% discount'
   }
 };
